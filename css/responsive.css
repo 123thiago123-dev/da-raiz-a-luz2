@@ -1,0 +1,24 @@
+
+/* Independent responsive shell - no Wix runtime required */
+*{box-sizing:border-box}
+html{width:100%;min-width:0}
+body{width:100%;min-width:0;margin:0!important;padding:0!important;overflow-x:hidden!important}
+.mobile-version,.desktop-version{width:100%;min-width:0}
+.desktop-version{display:none}
+.mobile-version{display:block}
+@media (min-width:768px){
+  .desktop-version{display:block!important}
+  .mobile-version{display:none!important}
+}
+@media (max-width:767.98px){
+  .desktop-version{display:none!important}
+  .mobile-version{display:block!important}
+  body.mobile-mode #SITE_CONTAINER{width:100%!important;max-width:100%!important;margin:0 auto!important;overflow-x:hidden!important}
+  body.mobile-mode #site-root{width:100%!important;max-width:100%!important;overflow:hidden!important}
+  body.mobile-mode .site-root{width:100%!important;max-width:100%!important}
+  body.mobile-mode #masterPage{width:100%!important;max-width:100%!important}
+  body.mobile-mode .BACKGROUND_GROUP{width:100%!important;max-width:100%!important}
+}
+@media (min-width:768px){
+  body #SITE_CONTAINER{max-width:none}
+}
